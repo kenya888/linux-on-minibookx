@@ -1,0 +1,32 @@
+*** a/drivers/gpu/drm/drm_panel_orientation_quirks.c	2022-07-13 00:19:23.625928625 -0000
+--- b/drivers/gpu/drm/drm_panel_orientation_quirks.c	2022-07-13 01:23:14.524555398 -0000
+***************
+*** 121,126 ****
+--- 121,132 ----
+  	.orientation = DRM_MODE_PANEL_ORIENTATION_LEFT_UP,
+  };
+  
++ static const struct drm_dmi_panel_orientation_data lcd1600x2560_rightside_up = {
++ 	.width = 1600,
++ 	.height = 2560,
++ 	.orientation = DRM_MODE_PANEL_ORIENTATION_RIGHT_UP,
++ };
++ 
+  static const struct dmi_system_id orientation_data[] = {
+  	{	/* Acer One 10 (S1003) */
+  		.matches = {
+***************
+*** 166,171 ****
+--- 172,183 ----
+  		  DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "Hi10 pro tablet"),
+  		},
+  		.driver_data = (void *)&lcd1200x1920_rightside_up,
++ 	}, {	/* Chuwi Minibook X */
++ 		.matches = {
++ 		  DMI_EXACT_MATCH(DMI_SYS_VENDOR, "CHUWI Innovation And Technology(shenzhen)co.,Ltd"),
++ 		  DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "MiniBook X"),
++ 		},
++ 		.driver_data = (void *)&lcd1600x2560_rightside_up,
+  	}, {	/* GPD MicroPC (generic strings, also match on bios date) */
+  		.matches = {
+  		  DMI_EXACT_MATCH(DMI_SYS_VENDOR, "Default string"),
