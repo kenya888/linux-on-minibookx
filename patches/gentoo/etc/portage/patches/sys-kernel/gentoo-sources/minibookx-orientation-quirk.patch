@@ -23,7 +23,7 @@
   		.driver_data = (void *)&lcd1200x1920_rightside_up,
 + 	}, {	/* Chuwi Minibook X */
 + 		.matches = {
-+ 		  DMI_EXACT_MATCH(DMI_SYS_VENDOR, "CHUWI Innovation And Technology(shenzhen)co.,Ltd"),
++ 		  DMI_MATCH(DMI_SYS_VENDOR, "CHUWI"),
 + 		  DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "MiniBook X"),
 + 		},
 + 		.driver_data = (void *)&lcd1600x2560_rightside_up,
