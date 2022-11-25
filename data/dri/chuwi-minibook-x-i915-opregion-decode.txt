@@ -1,0 +1,161 @@
+OpRegion Header:
+	sign:	IntelGraphicsMem
+	size:	0x00000008
+	over:	0x02010000
+	sver:	
+	vver:	
+	gver:	
+	mbox:	0x0000001f
+	dmod:	0x00000000
+	pcon:	0x00000103
+	dver:	1
+
+OpRegion Mailbox 1: Public ACPI Methods:
+	drdy:	0x00000001
+	csts:	0x00000000
+	cevt:	0x00000000
+	didl:
+		didl[0]:	0x00000400
+		didl[1]:	0x00000300
+		didl[2]:	0x00000000
+		didl[3]:	0x00000000
+		didl[4]:	0x00000000
+		didl[5]:	0x00000000
+		didl[6]:	0x00000000
+		didl[7]:	0x00000000
+	cpdl:
+		cpdl[0]:	0x00000000
+		cpdl[1]:	0x00000000
+		cpdl[2]:	0x00000000
+		cpdl[3]:	0x00000000
+		cpdl[4]:	0x00000000
+		cpdl[5]:	0x00000000
+		cpdl[6]:	0x00000000
+		cpdl[7]:	0x00000000
+	cadl:
+		cadl[0]:	0x00000400
+		cadl[1]:	0x00000300
+		cadl[2]:	0x00000000
+		cadl[3]:	0x00000000
+		cadl[4]:	0x00000000
+		cadl[5]:	0x00000000
+		cadl[6]:	0x00000000
+		cadl[7]:	0x00000000
+	nadl:
+		nadl[0]:	0x00000000
+		nadl[1]:	0x00000000
+		nadl[2]:	0x00000000
+		nadl[3]:	0x00000000
+		nadl[4]:	0x00000000
+		nadl[5]:	0x00000000
+		nadl[6]:	0x00000000
+		nadl[7]:	0x00000000
+	aslp:	0x00000000
+	tidx:	0x00000000
+	chpd:	0x00000001
+	clid:	0x00000003
+	cdck:	0x00000000
+	sxsw:	0x00000000
+	evts:	0x00000000
+	cnot:	0x00000000
+	nrdy:	0x00000000
+	did2:
+		did2[0]:	0x00000000
+		did2[1]:	0x00000000
+		did2[2]:	0x00000000
+		did2[3]:	0x00000000
+		did2[4]:	0x00000000
+		did2[5]:	0x00000000
+		did2[6]:	0x00000000
+	cpd2:
+		cpd2[0]:	0x00000000
+		cpd2[1]:	0x00000000
+		cpd2[2]:	0x00000000
+		cpd2[3]:	0x00000000
+		cpd2[4]:	0x00000000
+		cpd2[5]:	0x00000000
+		cpd2[6]:	0x00000000
+
+OpRegion Mailbox 2: Software SCI Interface (SWSCI):
+	scic:	0x00000020
+	parm:	0x00000000
+	dslp:	0x00000000
+
+OpRegion Mailbox 3: BIOS to Driver Notification (ASLE):
+	ardy:	0x00000001
+	aslc:	0x00000000
+	tche:	0x00000002
+	alsi:	0x00000000
+	bclp:	0x000000ff
+	pfit:	0x80000006
+	cblv:	0x80000064
+	bclm:
+		bclm[0]:	0x8000 (  0% -> 0x00)
+		bclm[1]:	0x8a0d ( 10% -> 0x0d)
+		bclm[2]:	0x941b ( 20% -> 0x1b)
+		bclm[3]:	0x9e28 ( 30% -> 0x28)
+		bclm[4]:	0xa835 ( 40% -> 0x35)
+		bclm[5]:	0xb243 ( 50% -> 0x43)
+		bclm[6]:	0xbc50 ( 60% -> 0x50)
+		bclm[7]:	0xc65d ( 70% -> 0x5d)
+		bclm[8]:	0xd06b ( 80% -> 0x6b)
+		bclm[9]:	0xda78 ( 90% -> 0x78)
+		bclm[10]:	0xe486 (100% -> 0x86)
+		bclm[11]:	0x0000
+		bclm[12]:	0x0000
+		bclm[13]:	0x0000
+		bclm[14]:	0x0000
+		bclm[15]:	0x0000
+		bclm[16]:	0x0000
+		bclm[17]:	0x0000
+		bclm[18]:	0x0000
+		bclm[19]:	0x0000
+	cpfm:	0x00000000
+	epfm:	0x00000000
+	plut header:	0x00
+	plut identifier: 00 00 00 00 00 00 00 00 00 00
+	plut:
+		plut[0]:	00 00 00 00 00 00 00 
+		plut[1]:	00 00 00 00 00 00 00 
+		plut[2]:	00 00 00 00 00 00 00 
+		plut[3]:	00 00 00 00 00 00 00 
+		plut[4]:	00 00 00 00 00 00 00 
+		plut[5]:	00 00 00 00 00 00 00 
+		plut[6]:	00 00 00 00 00 00 00 
+		plut[7]:	00 00 00 00 00 00 00 
+		plut[8]:	00 00 00 00 00 00 00 
+	pfmb:	0x00000000
+	ccdv:	0x00000000
+	pcft:	0x0000003e
+	srot:	0x00000000
+	iuer:	0x00000000
+	fdss:	00 00 00 00 00 00 00 00 
+	fdsp:	0x00000000
+	stat:	0x00000000
+	rvda:	0x0000000000002000
+	rvds:	0x00001e00
+
+OpRegion Mailbox 4: Video BIOS Table (VBT):
+	product string:	
+	(use intel_vbt_decode to decode the VBT)
+
+OpRegion Mailbox 5: BIOS to Driver Notification Extension:
+	phed:	0x00000000
+	bddc:
+		bddc[0x00]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x10]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x20]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x30]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x40]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x50]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x60]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x70]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x80]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0x90]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0xa0]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0xb0]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0xc0]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0xd0]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0xe0]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		bddc[0xf0]:	00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
